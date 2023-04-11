@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="de-DE" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prepare installation &mdash; O3-Shop 1.0.0 Dokumentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/o3.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Stichwortverzeichnis" href="../../../genindex.html" />
+    <link rel="search" title="Suche" href="../../../search.html" />
+    <link rel="next" title="Run setup" href="RunSetup.html" />
+    <link rel="prev" title="Server and system requirements" href="SystemRequirements.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../../../index.html">
+            
+              <img src="../../../_static/logo_light.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Dokumentation durchsuchen" aria-label="Dokumentation durchsuchen" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../welcome.html">Willkommen</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Benutzerhandbuch</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Installation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">New installation</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="NewInstallation.html">Installation from scratch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SystemRequirements.html">System requirements</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Prepare installation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#install-composer">Install Composer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#provide-shop-files">Provide shop files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configure-apache">Configure Apache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adjusting-file-and-directory-permissions">Adjusting file and directory permissions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-database">Create database</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="RunSetup.html">Run setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CompleteSetup.html">Complete setup</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Migration/index.html">Migrate from OXID eShop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Update/index.html">Update</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer/GetInvolved.html">Get involved</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">O3-Shop</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Installation</a></li>
+          <li class="breadcrumb-item"><a href="index.html">New installation</a></li>
+      <li class="breadcrumb-item active">Prepare installation</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://gitlab.o3-shop.com/o3/o3-documentation/blob/main/source/user/installation/NewInstallation/PrepareInstallation.md" class="fa fa-gitlab"> Auf GitLab bearbeiten</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="prepare-installation">
+<h1>Prepare installation<a class="headerlink" href="#prepare-installation" title="Permalink to this heading"></a></h1>
+<p>Create the prerequisites for the new installation of the O3-Shop.</p>
+<section id="install-composer">
+<h2>Install Composer<a class="headerlink" href="#install-composer" title="Permalink to this heading"></a></h2>
+<p>The installation of O3-Shop is no longer based on packed and downloadable installation packages, but is carried out with the help of Composer. Composer is a dependency manager for PHP, a tool that takes dependencies of program components of a project into account while installing the files of this project into a defined directory.</p>
+<p>For a new installation of the O3-Shop you need Composer. See under <a class="reference internal" href="SystemRequirements.html"><span class="std std-doc">Server and System Requirements</span></a> section <a class="reference internal" href="SystemRequirements.html#composer"><span class="std std-ref">Composer</span></a>.</p>
+<p>For installation instructions, see the Getting Started section of the Composer pages at <a class="reference external" href="https://getcomposer.org">https://getcomposer.org</a>.</p>
+</section>
+<section id="provide-shop-files">
+<h2>Provide shop files<a class="headerlink" href="#provide-shop-files" title="Permalink to this heading"></a></h2>
+<p>The shop files are provided by Composer. The shop files are stored in a subdirectory that is specified in the command with <strong>your_project_name</strong>. This is based on the directory in which the command is issued in the shell. The parameter <strong>–no-dev</strong> is specified if the development-related files are not needed.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">composer</span> <span class="n">create</span><span class="o">-</span><span class="n">project</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">dev</span> <span class="n">o3</span><span class="o">-</span><span class="n">shop</span><span class="o">/</span><span class="n">o3</span><span class="o">-</span><span class="n">shop</span> <span class="n">your_project_name</span> <span class="mf">1.1</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
+<p>Use a different version constraint to install a different project version.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">1.1</span></code> for the latest official release of the 1.1 branch</p></li>
+<li><p>leave empty for the latest official release ever</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dev-b-1.1-ce-nightly</span></code> for the latest development versions of the 1.1 branch. This is intended for development and testing purposes and should not be used for productive use!</p></li>
+</ul>
+</div>
+<p>After Composer has finished its work, the new directory named <em>your_project_name</em> exists. This is the root directory of the project and contains all files needed for the installation of the O3-Shop.</p>
+</section>
+<section id="configure-apache">
+<h2>Configure Apache<a class="headerlink" href="#configure-apache" title="Permalink to this heading"></a></h2>
+<p>The root directory must now be moved to a directory that the HTTP server can access. The document root directory of Apache must point to the <em><strong>/source</strong></em> directory of the main directory.</p>
+</section>
+<section id="adjusting-file-and-directory-permissions">
+<h2>Adjusting file and directory permissions<a class="headerlink" href="#adjusting-file-and-directory-permissions" title="Permalink to this heading"></a></h2>
+<p>The HTTP server requires read and write access for the following directories and their subdirectories at runtime:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/source/export</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/source/log/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/source/out/pictures/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/source/out/media/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/source/tmp/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/var/</span></code></p></li>
+</ul>
+<p>In addition, the CLI user (Command Line Interface) also needs read and write access for the directory <code class="docutils literal notranslate"><span class="pre">/var/</span></code>.</p>
+<p>For the web-based setup, the HTTP server must have write access to the following directory and these files:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/source/Setup</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/source/config.inc.php</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/source/.htaccess</span></code></p></li>
+</ul>
+</section>
+<section id="create-database">
+<h2>Create database<a class="headerlink" href="#create-database" title="Permalink to this heading"></a></h2>
+<p>O3-Shop requires a MySQL database to store items, categories, customer and order data and other information.</p>
+<p>Most web hosts offer database access via a special website, such as phpMyAdmin. If you need help with this, please contact your hosting partner or Internet Service Provider (ISP).</p>
+<p>Create a new MySQL database. You can choose the name of the database freely, for example <code class="docutils literal notranslate"><span class="pre">o3_shop</span></code>.</p>
+<p>Remember the name of the database and the access data to the database (user name and password).</p>
+<p>You will need this data to run the setup after the installation.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="SystemRequirements.html" class="btn btn-neutral float-left" title="Server and system requirements" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Zurück</a>
+        <a href="RunSetup.html" class="btn btn-neutral float-right" title="Run setup" accesskey="n" rel="next">Weiter <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023 - 2023, O3-Shop, 2021 - 2022 OXID eSales AG.</p>
+  </div>
+
+   <jinja2.runtime.BlockReference object at 0x7f304f9d2760>
+<a href="https://www.o3-shop.com/"><span class="icon icon-home"></span> About O3-Shop</a> | <a href="https://community.o3-shop.com/">Join the community</a> | <a href="https://issues.o3-shop.com/">Issue tracker</a> | <a href="https://gitlab.o3-shop.com/o3/">Sources</a> | <a href="https://www.o3-shop.com/contact/">Contact</a> | <a href="https://www.gnu.org/licenses/gpl-3.0.de.html">License: GPL v3</a>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
