@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customization &mdash; O3-Shop TinyMCE editor plugin 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/o3.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Get involved" href="GetInvolved.html" />
+    <link rel="prev" title="Use" href="../User/Use.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo_light.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../Welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../User/Installation/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../User/Configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../User/Use.html">Use</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Customization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#options">Options</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#add">Add</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modify">Modify</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove">Remove</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#plugins">Plugins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Add</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Modify</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Remove</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbars">Toolbars</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Add</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Modify</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Remove</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="GetInvolved.html">Get involved</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">O3-Shop TinyMCE editor plugin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Customization</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://gitlab.o3-shop.com/o3/tinymce-editor-documentation/blob/main/source/Developer/Customization.md" class="fa fa-gitlab"> Edit on GitLab</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="customization">
+<h1>Customization<a class="headerlink" href="#customization" title="Permalink to this heading"></a></h1>
+<p>For Configuration of the module please check the section Configuration in the user manual above.</p>
+<p>Further customizations can be achieved through overloading of the source code. Use the existing implementations as reference.</p>
+<section id="options">
+<h2>Options<a class="headerlink" href="#options" title="Permalink to this heading"></a></h2>
+<p>The appearance and behavior of the TinyMCE editor can be adapted to individual preferences through various <a target="_blank" href="https://www.tiny.cloud/docs/configure">Settings</a>. Each configuration is implemented as a separate class. These are located in the folder ‘Application/Core/TinyMCE/Options’ of the module.</p>
+<section id="add">
+<h3>Add<a class="headerlink" href="#add" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>To add an option, create a new class that complies with the interface ‘O3\TinyMCE\Application\Core\TinyMCE\Options\OptionInterface’.</p></li>
+<li><p>In the class ‘O3\TinyMCE\Application\Core\TinyMCE\Configuration’ extend the method ‘addCustomOptions’ and execute the call ‘$this-&gt;addOption()’ in it with the instance of your created class.</p></li>
+</ul>
+</section>
+<section id="modify">
+<h3>Modify<a class="headerlink" href="#modify" title="Permalink to this heading"></a></h3>
+<p>To change the settings of an existing option, overload its class and modify the return value of the corresponding method.</p>
+</section>
+<section id="remove">
+<h3>Remove<a class="headerlink" href="#remove" title="Permalink to this heading"></a></h3>
+<p>In the class ‘O3\TinyMCE\Application\Core\TinyMCE\Configuration’ extend the method ‘addCustomOptions’ and execute the call ‘$this-&gt;removeOption()’ in it with the ID of the option to be removed.</p>
+</section>
+</section>
+<section id="plugins">
+<h2>Plugins<a class="headerlink" href="#plugins" title="Permalink to this heading"></a></h2>
+<p>The functions of the editor can be controlled by plugins. Each function is usually represented by a button in the editor. For functions not included in the standard, the path to JavaScript files describing their functionality can be defined.</p>
+<section id="id1">
+<h3>Add<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>To add a plugin, create a new class that complies with the interface ‘O3\TinyMCE\Application\Core\TinyMCE\Plugins\PluginInterface’.</p></li>
+<li><p>In the class ‘O3\TinyMCE\Application\Core\TinyMCE\Pluginlist’ extend the method ‘get’ and add an additional entry to the return with the instance of your created class.</p></li>
+</ul>
+</section>
+<section id="id2">
+<h3>Modify<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<p>To change the settings of an existing plugin, overload its class and modify the return value of the corresponding method.</p>
+</section>
+<section id="id3">
+<h3>Remove<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
+<p>In the class ‘O3\TinyMCE\Application\Core\TinyMCE\Pluginlist’ extend the method ‘get’ and remove the entry to be deleted in the return value.</p>
+</section>
+</section>
+<section id="toolbars">
+<h2>Toolbars<a class="headerlink" href="#toolbars" title="Permalink to this heading"></a></h2>
+<p>The function buttons in the editor are grouped into thematic toolbars which can be arranged individually.</p>
+<section id="id4">
+<h3>Add<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>To add a toolbar, create a new class that complies with the interface ‘O3\TinyMCE\Application\Core\TinyMCE\Toolbar\ToolbarInterface’.</p></li>
+<li><p>In the class ‘O3\TinyMCE\Application\Core\TinyMCE\ToolbarList’ extend the method ‘get’ and add an additional entry to the return with the instance of your created class.</p></li>
+</ul>
+</section>
+<section id="id5">
+<h3>Modify<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h3>
+<p>To change the settings of an existing toolbar, overload its class and modify the return value of the corresponding method.</p>
+</section>
+<section id="id6">
+<h3>Remove<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h3>
+<p>In the class ‘O3\TinyMCE\Application\Core\TinyMCE\ToolbarList’ extend the method ‘get’ and remove the entry to be deleted in the return value.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../User/Use.html" class="btn btn-neutral float-left" title="Use" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="GetInvolved.html" class="btn btn-neutral float-right" title="Get involved" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023 - 2023, O3-Shop.</p>
+  </div>
+
+   <jinja2.runtime.BlockReference object at 0x7fb6fdadbfd0>
+<a href="https://www.o3-shop.com/"><span class="icon icon-home"></span> About O3-Shop</a> | <a href="https://community.o3-shop.com/">Join the community</a> | <a href="https://issues.o3-shop.com/">Issue tracker</a> | <a href="https://gitlab.o3-shop.com/o3/">Sources</a> | <a href="https://www.o3-shop.com/contact/">Contact</a> | <a href="https://www.gnu.org/licenses/gpl-3.0.de.html">License: GPL v3</a>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

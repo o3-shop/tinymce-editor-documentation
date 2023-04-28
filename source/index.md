@@ -1,29 +1,31 @@
 ```{toctree}
 :maxdepth: 1
 :hidden:
-Welcome <welcome>
+Welcome <Welcome>
 ```
 ```{toctree}
 :maxdepth: 1
 :hidden:
 :caption: User Manual
-Installation <user/installation/index>
-Konfiguration <user/configuration>
-Verwendung <user/usage>
+Installation <User/Installation/index>
+Configuration <User/Configuration>
+Use <User/Use>
 ```
 ```{toctree}
 :maxdepth: 1
 :hidden:
 :caption: Developer Manual
-Extension <developer/Extension>
-Get involved <developer/GetInvolved>
+Customization <Developer/Customization>
+Get involved <Developer/GetInvolved>
 ```
+
+# O3-Shop
 
 # O3-Shop TinyMCE editor plugin
 
 ![O3-Shop frontend](assets/O3-screen-Github.png)
 
-Das ist ein Modul, welches den Adminbereich des O3-Shops um einen WYSIWYG Editor erweitert.
+TinyMCE is a module which provides a HTML editor for the Shop Admin.
 
 ## About
 

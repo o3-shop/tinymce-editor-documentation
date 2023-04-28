@@ -1,0 +1,25 @@
+# Update
+
+## Ensure
+
+Ensure you have an error-free Composer installation of the Shop.
+
+Check your system health in the Shop Admin at 'Servie' -> 'System health'.
+
+## Prepare
+
+Create a backup of the shop. This includes the database and the files on the server.
+
+## Perform
+
+Open a shell in the main store directory and run the composer command below.
+
+```
+composer require o3-shop/tinymce-editor
+```
+
+```{note}
+The update will overwrite any changes you may have made to the module in the source directory.
+
+Background: During an update, Composer first loads the new data into the **vendor** directory. Then the data is copied to the **source** directory. This replaces the files.
+```
