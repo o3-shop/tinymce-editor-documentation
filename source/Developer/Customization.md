@@ -10,7 +10,7 @@ The appearance and behavior of the TinyMCE editor can be adapted to individual p
 
 ### Add
 
-- To add an option, create a new class that complies with the interface 'O3\TinyMCE\Application\Core\TinyMCE\Options\OptionInterface'.
+- To add an option, create a new class that fulfills the interface 'O3\TinyMCE\Application\Core\TinyMCE\Options\OptionInterface'.
 - In the class 'O3\TinyMCE\Application\Core\TinyMCE\Configuration' extend the method 'addCustomOptions' and execute the call '$this->addOption()' in it with the instance of your created class.
 
 ### Modify
@@ -27,7 +27,7 @@ The functions of the editor can be controlled by plugins. Each function is usual
 
 ### Add
 
-- To add a plugin, create a new class that complies with the interface 'O3\TinyMCE\Application\Core\TinyMCE\Plugins\PluginInterface'.
+- To add a plugin, create a new class that fulfills the interface 'O3\TinyMCE\Application\Core\TinyMCE\Plugins\PluginInterface'.
 - In the class 'O3\TinyMCE\Application\Core\TinyMCE\Pluginlist' extend the method 'get' and add an additional entry to the return with the instance of your created class.
 
 ### Modify
@@ -44,7 +44,7 @@ The function buttons in the editor are grouped into thematic toolbars which can 
 
 ### Add
 
-- To add a toolbar, create a new class that complies with the interface 'O3\TinyMCE\Application\Core\TinyMCE\Toolbar\ToolbarInterface'. 
+- To add a toolbar, create a new class that fulfills the interface 'O3\TinyMCE\Application\Core\TinyMCE\Toolbar\ToolbarInterface'. 
 - In the class 'O3\TinyMCE\Application\Core\TinyMCE\ToolbarList' extend the method 'get' and add an additional entry to the return with the instance of your created class.
 
 ### Modify

@@ -1,6 +1,6 @@
 # Get involved
 
-O3-Shop is available under the GPL v3 license.
+O3-Shop TinyMCE editor plugin is available under the GPL v3 license.
 
 If you want to contribute code, as features or bug-fixes, you need to create a pull request. Include valid licence information and make sure your code is licenced under GPLv3, or a compatible license.
 

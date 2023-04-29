@@ -19,11 +19,11 @@ Customization <Developer/Customization>
 Get involved <Developer/GetInvolved>
 ```
 
-# O3-Shop
-
 # O3-Shop TinyMCE editor plugin
 
-![O3-Shop frontend](assets/O3-screen-Github.png)
+![Logos](assets/TinyMCE.png)
+
+![O3-Shop backend with TinyMCE editor](assets/admin.png)
 
 TinyMCE is a module which provides a HTML editor for the Shop Admin.
 
