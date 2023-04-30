@@ -4,7 +4,7 @@
 
 Ensure you have an error-free Composer installation of the Shop.
 
-Ensure your system health in the Shop Admin at 'Servie' -> 'System health'.
+Ensure your system health in the Shop Admin at 'Service' -> 'System health'.
 
 ## Prepare
 
