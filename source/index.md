@@ -21,11 +21,13 @@ Get involved <Developer/GetInvolved>
 
 # O3-Shop TinyMCE editor plugin
 
-![Logos](assets/TinyMCE.png)
-
 ![O3-Shop backend with TinyMCE editor](assets/admin.png)
 
 TinyMCE is a module which provides a HTML editor for the Shop Admin.
+
+This documentation describes all topics related to the editor module.
+
+The documentation for the O3 shop can be found at [https://docs.o3-shop.com/](https://docs.o3-shop.com/).
 
 ## About
 
