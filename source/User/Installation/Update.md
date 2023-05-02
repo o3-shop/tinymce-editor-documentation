@@ -8,7 +8,7 @@ Deactivate the module executing the command:
 vendor/bin/oe-console oe:module:deactivate o3-tinymce-editor
 ```
 
-Alternatively you can deactivate the module in the Shop Admin at 'Extensions' -> 'Modules'. Select the module and deactivate it in the tab 'Overview'.
+Alternatively you can deactivate the module in the Shop Admin at *Extensions -> Modules*. Select the module and deactivate it in the tab *Overview*.
 
 ```{note}
 Every time the module is activated or deactivated the module does empty the files in the shop's tmp directory.'
@@ -42,4 +42,4 @@ Activate the module executing the command:
 vendor/bin/oe-console oe:module:activate o3-tinymce-editor
 ```
 
-Alternatively you can activate the module in the Shop Admin at 'Extensions' -> 'Modules'. Select the module and activate it in the tab 'Overview'.
+Alternatively you can activate the module in the Shop Admin at *Extensions -> Modules*. Select the module and activate it in the tab *Overview*.
